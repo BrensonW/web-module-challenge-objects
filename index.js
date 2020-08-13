@@ -81,10 +81,11 @@ and should return a string in the format `{name} gave the restaurant a {rating},
  * it will return `Daniela gave the restaurant a 5 star review and their feedback was: Beautiful atmosphere and wonderful vegan options!`
 */
 function getReviewByIndex(reviews, index) {
-console.log(reviews[index]);
+ 
+ return ` ${reviews[index].name} 'Gave the place a' ${reviews[index].rating} 'And commented' ${reviews[index].feedback} `;
   }
   
-  getReviewByIndex(reviews, 0);
+  console.log(getReviewByIndex(reviews, 0));
 
 /* Task 7: Write a function to get information about the most recent review called `getLastReview`
 
@@ -97,7 +98,7 @@ For example, if getLastReview is invoked passing the reviews array it will retur
 */
 function getLastReview(array) {
  
-     console.log(array[array.length -1]);
+     
      console.log( `${array[array.length -1].name}  gave the place a ${array[array.length -1].rating} and commented ${array[array.length -1].feedback}`);
   }
   
@@ -118,10 +119,11 @@ getLastReview(reviews);
     {name:"Lauren", rating: 4, feedback: "Absolutely love that they have karaoke Fridays! Food and drink selection is okay."}]
 */
 
- function getReviewByRating(/* code here */) {
-    /* code here */
-  }
-
+ function getReviewByRating(reviews, rating) {
+return reviews;
+ }
+  
+console.log(getReviewByRating(reviews[2].rating));
   
 /** STRETCH 2: Write a function called 'getLongestReview' that returns an array containing all reviews longer than 15 words. 
   
@@ -136,10 +138,7 @@ and should return an array of objects.
     {name: "Brett", rating: 3, feedback: "great selection of snacks and a nice cafe area to get work done during the day."},
     {name: "Julius", rating: 2, feedback: "I was largely unimpressed by this venue. Nothing special on the menu and too expensive. The atmosphere is polarizing, and not for me, but I think some would like it." }]
 */
-  function getLongReviews(/* code here */) {
-    /* code here */
-  }
-  
+ function getLongReviews();
 
 /* STRETCH 3:  This challenge is not related to the data above! 
 
